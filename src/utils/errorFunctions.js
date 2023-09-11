@@ -18,3 +18,10 @@ export function conflictError() {
 		// message: `Could not find specified "${entity}"!`
 	};
 }
+
+export function notFoundError() {
+	return {
+		type: "error_not_found",
+		// message: `Could not find specified "${entity}"!`
+	};
+}

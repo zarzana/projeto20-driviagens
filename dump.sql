@@ -9,7 +9,7 @@ CREATE TABLE "flights" (
         FOREIGN KEY ("origin") REFERENCES "cities"("id"),
     "destination" INTEGER NOT NULL,
         FOREIGN KEY ("destination") REFERENCES "cities"("id"),
-    "date" INTEGER NOT NULL
+    "date" DATE NOT NULL
 );
 
 CREATE TABLE "passengers" (
