@@ -11,3 +11,10 @@ export function badRequestError() {
 		// message: `Could not find specified "${entity}"!`
 	};
 }
+
+export function conflictError() {
+	return {
+		type: "error_conflict",
+		// message: `Could not find specified "${entity}"!`
+	};
+}

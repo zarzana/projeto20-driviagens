@@ -1,3 +1,4 @@
+import httpStatus from "http-status";
 import { addPassengerService } from "../services/passengerServices.js";
 
 export async function addPassenger(req, res) {
@@ -6,6 +7,6 @@ export async function addPassenger(req, res) {
 
     await addPassengerService(firstName, lastName);
 
-    res.sendStatus(201);
+    res.sendStatus(httpStatus.CREATED);
 
 }
